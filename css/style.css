@@ -533,20 +533,16 @@ footer {
   gap: 50px;
 }
 
-input[type="checkbox"] {
-  position: absolute;
-  display: none;
-}
-
-.database {
+.buttons {
   text-align: left;
+  padding-top: 20px;
 }
 
-.database * {
+.buttons * {
   display: inline-block;
 }
 
-.database label {
+.button {
   min-width: 80px;
   padding: 8px 10px;
   margin-bottom: 10px;
@@ -557,7 +553,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.database label:hover {
+.button:hover {
   background-color: #529426;
   color: white;
 }
@@ -567,6 +563,7 @@ input[type="checkbox"] {
   align-items: center;
   flex-direction: column;
   padding-bottom: 20px;
+  font-size: 0.875rem;
 }
 
 .pages {
@@ -576,7 +573,6 @@ input[type="checkbox"] {
 }
 
 /* results */
-
 .results {
   padding-bottom: 20px;
 }
