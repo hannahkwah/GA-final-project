@@ -547,11 +547,12 @@ input[type="checkbox"] {
 }
 
 .database label {
-  min-width: 100px;
+  min-width: 80px;
   padding: 8px 10px;
   margin-bottom: 10px;
   border-radius: 20px;
   border: 1px solid #529426;
+  font-size: 0.875rem;
   transition: all 0.1s ease;
   cursor: pointer;
 }
