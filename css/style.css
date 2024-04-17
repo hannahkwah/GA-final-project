@@ -1,0 +1,717 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  line-height: 1.4rem;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+}
+
+.highlights,
+.microsites,
+.contact {
+  padding: 20px;
+}
+
+button {
+  border: none;
+  background-color: #529426;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+button a {
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 10px;
+}
+
+/* top section */
+#top {
+  background-color: #e5e5e5;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+#top img {
+  width: 20px;
+}
+
+#top p {
+  font-size: 0.75rem;
+}
+
+/* navbar */
+ul,
+ol,
+li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.header {
+  background-color: #f9f9f9;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.logo-desktop img {
+  width: 100px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-nav p {
+  font-size: 1.4rem;
+}
+
+.logo-mobile {
+  display: block;
+}
+
+.logo-mobile img {
+  width: 40px;
+}
+
+.nav,
+.erequest {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu,
+.close {
+  font-size: 1.7rem;
+  display: block;
+}
+
+.close {
+  color: black;
+}
+
+/* side menu */
+.header2 {
+  display: none;
+  position: fixed;
+  top: 44px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #529426;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.side-nav {
+  padding: 20px;
+  line-height: 3rem;
+}
+
+.side-nav a {
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+.button2 {
+  background-color: white;
+  color: #529426 !important;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* dropdown */
+.dropdown {
+  position: absolute;
+  background-color: #f9f9f9;
+  font-size: 0.875rem;
+  padding: 10px;
+  margin-top: -20px;
+  display: none;
+  line-height: 2rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dropdown a {
+  margin: 20px;
+}
+
+.dropdown a:hover {
+  color: #529426;
+  cursor: pointer;
+}
+
+#resources {
+  margin-left: 350px;
+}
+
+#highlights {
+  margin-left: 470px;
+}
+
+.showdropdown {
+  display: block;
+}
+
+/* search */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #eef4e9;
+}
+
+.search h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.searchbar {
+  width: 100%;
+  text-align: center;
+}
+
+.searchbar input[type="text"],
+.searchbar button {
+  padding: 10px;
+  border: 1px solid #529426;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchbar input[type="text"] {
+  background-color: white;
+  width: 70%;
+}
+
+.searchbar button {
+  background-color: #529426;
+  color: white;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.adv-search {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 12px;
+}
+
+.adv {
+  color: #529426;
+  font-weight: 600;
+}
+
+.onesearch {
+  color: #0046af;
+  font-weight: 600;
+}
+
+/* hero section */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.control {
+  margin: 0 20px;
+  filter: drop-shadow(0 0 0.5rem darkgrey);
+}
+
+/* highlights */
+.highlights-grid {
+  max-width: 1000px;
+  min-height: 400px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box4"
+    "box5 box5 box6 box6"
+    "box7 box7 box8 box8";
+}
+
+.grid-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.grid-item-1 {
+  grid-area: box1;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights2.jpg);
+}
+
+.grid-item-2 {
+  grid-area: box2;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights3.jpg);
+}
+
+.grid-item-3 {
+  grid-area: box3;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights4.jpg);
+  background-position: bottom;
+}
+
+.grid-item-4 {
+  grid-area: box4;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights5.jpg);
+}
+
+.grid-item-5 {
+  grid-area: box5;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights6.jpg);
+}
+
+.grid-item-6 {
+  grid-area: box6;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights7.jpg);
+}
+
+.grid-item-7 {
+  grid-area: box7;
+  background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights8.jpg);
+  background-position: bottom;
+}
+
+/* past, history, memories */
+.info {
+  display: grid;
+  gap: 20px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.past {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://www.nas.gov.sg/archivesonline/watermark/picas_data/tn_pcd/19980005065-8073-3222-4835/img0086.jpg);
+}
+
+.history {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://www.nas.gov.sg/archivesonline/watermark/picas_data/tn_pcd/19980002739-8154-3221-0893/img0088.jpg);
+}
+
+.memories {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://www.nas.gov.sg/archivesonline/watermark/picas_data/tn_pcd/19980001353-8151-3231-2011/img0027.jpg);
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.content button {
+  width: 100%;
+}
+
+/* contact */
+.contact {
+  background-color: #f9f9f9;
+}
+
+.grid-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.address {
+  padding-bottom: 20px;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.footer p {
+  font-size: 0.875rem;
+}
+
+.links {
+  display: flex;
+  gap: 100px;
+}
+
+.link-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.links p {
+  line-height: 2rem;
+}
+
+.tc {
+  padding-top: 40px;
+}
+
+.tc p {
+  font-size: 0.75rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* basic search */
+.basic-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 50px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  display: none;
+}
+
+.database {
+  text-align: left;
+}
+
+.database * {
+  display: inline-block;
+}
+
+.database label {
+  min-width: 100px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid #529426;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.database label:hover {
+  background-color: #529426;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* results */
+
+.results {
+  padding-bottom: 20px;
+}
+
+.result {
+  padding-bottom: 20px;
+}
+
+figure {
+  display: flex;
+  gap: 10px;
+}
+
+.square {
+  background-color: lightgrey;
+  min-width: 80px;
+  height: 80px;
+}
+
+@media (min-width: 767px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h5,
+  p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  /* navbar */
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .nav,
+  .erequest {
+    display: flex;
+  }
+
+  .menu,
+  .close {
+    display: none;
+  }
+
+  /* highlights */
+  .highlights-grid {
+    margin: auto;
+    height: 700px;
+    grid-template-areas:
+      "box1 box1 box2 box3"
+      "box4 box5 box5 box3"
+      "box6 box6 box7 box7";
+  }
+
+  .grid-item-1 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights2.jpg);
+  }
+
+  .grid-item-2 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights7-lg.jpg);
+  }
+
+  .grid-item-3 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights3-lg.jpg);
+    background-position: top;
+  }
+
+  .grid-item-4 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights5-lg.jpg);
+  }
+
+  .grid-item-5 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights6.jpg);
+  }
+
+  .grid-item-6 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights4.jpg);
+    background-position: bottom;
+  }
+
+  .grid-item-7 {
+    background-image: url(https://www.nas.gov.sg/archivesonline/style/main_portal/highlights/highlights8.jpg);
+    background-position: bottom;
+  }
+
+  /* past, history, memories */
+  .info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid {
+    height: 300px;
+  }
+
+  /* contact */
+  .grid-contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map {
+    padding: 0;
+  }
+
+  /* footer */
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    width: 300px;
+  }
+
+  .link-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  /* results */
+  .basic-search {
+    flex-direction: row;
+  }
+
+  .pagination {
+    align-items: flex-end;
+  }
+}

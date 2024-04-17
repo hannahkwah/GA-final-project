@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAS basic search</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/2aeda9739a.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <main>
+    <!-- top section -->
+    <div id="top">
+      <img src="https://eservice.nlb.gov.sg/components/V2/content/img/singgov.svg" alt="singgov logo" />
+      <p>A Singapore Government Agency Website</p>
+    </div>
+
+    <!-- navbar -->
+    <nav class="header" id="navbar">
+      <div class="left-nav">
+        <div class="logo-desktop">
+          <a href="index.html"><img src="https://eservice.nlb.gov.sg/components/V2/content/img/nas.svg"
+              alt="desktop nas logo" /></a>
+        </div>
+        <div class="logo-mobile">
+          <a href="index.html"><img src="https://eservice.nlb.gov.sg/components/V2/content/img/nas-logo.svg"
+              alt="mobile nas logo" /></a>
+        </div>
+        <ul class="nav">
+          <li><a href="#">NAS Corporate</a></li>
+          <li><a href="#">About</a></li>
+          <li id="menu1">
+            <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
+          </li>
+          <li id="menu2">
+            <a href="#">Highlights <i class="fa-solid fa-angle-down"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right-nav">
+        <div class="erequest">
+          <button class="button">e-Request</button>
+          <p><i class="fa-solid fa-magnifying-glass"></i></p>
+        </div>
+        <div class="menu" id="menu-trigger">
+          <p><i class="fa-solid fa-bars"></i></p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- dropdown -->
+    <section class="dropdown" id="resources">
+      <li><a href=>Audiovisual and Sound Recordings</a></li>
+      <li><a href=>Oral History Interviews</a></li>
+      <li><a href=>Speeches and Press Releases</a></li>
+      <li><a href=>Maps and Building Plans</a></li>
+      <li><a href=>Posters</a></li>
+      <li>
+        <a href="#">Straits Settlements, Overseas and Private Records</a>
+      </li>
+      <li><a href="#">Government Records</a></li>
+    </section>
+
+    <section class="dropdown" id="highlights">
+      <li><a href="#">National Day Messages</a></li>
+      <li><a href="#">National Day Rally Speeches</a></li>
+      <li><a href="#">Rediffusion Short Clips</a></li>
+      <li><a href="#">Off The Record</a></li>
+      <li><a href="#">The Battle for Merger Radio Talks</a></li>
+      <li><a href="#">National Day Parades</a></li>
+      <li><a href="#">Papers Presented to Parliament</a></li>
+    </section>
+
+    <!-- side menu -->
+    <section class="header2" id="sidemenu">
+      <div class="header">
+        <div class="left-nav">
+          <div class="logo-mobile">
+            <img src="https://eservice.nlb.gov.sg/components/V2/content/img/nas-logo.svg" alt="mobile nas logo" />
+          </div>
+        </div>
+        <div class="right-nav">
+          <div class="close" id="close">
+            <p><i class="fa-solid fa-xmark"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-nav">
+        <li><a href="#">NAS Corporate</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Highlights</a></li>
+        <li><a href="#" class="button2">e-Request</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+        </li>
+      </div>
+    </section>
+
+    <!-- search -->
+    <section class="search">
+      <div class="searchbar">
+        <form action="">
+          <input type="text" placeholder="Municipal" />
+          <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </form>
+      </div>
+
+      <div class="adv-search">
+        <p>
+          <a class="adv" href="#">Advanced search</a>
+        </p>
+        <p>or</p>
+        <p>
+          <a class="onesearch" href="#">OneSearch</a>
+        </p>
+      </div>
+    </section>
+
+    <main class="basic-search">
+      <!-- filter -->
+      <section class="filter">
+        <p>Filter by</p>
+        <p><b>Databases</b></p>
+        <div class="database">
+          <input type="checkbox" name="categories" id="photo" value="Photographs" />
+          <input type="checkbox" name="categories" id="oral" value="Oral History Interviews" />
+          <input type="checkbox" name="categories" id="audio" value="Audiovisual and Sound Recordings" />
+          <input type="checkbox" name="categories" id="speech" value="Speeches and Press Releases" />
+          <input type="checkbox" name="categories" id="maps" value="Maps and Building Plans Posters" />
+          <input type="checkbox" name="categories" id="straits"
+            value="Straits Settlements, Overseas and Private Records" />
+          <input type="checkbox" name="categories" id="govt" value="Government Records" />
+
+          <ol class="checkbox">
+            <li><label for="All">Photographs</label></li>
+            <li><label for="All">Oral History Interviews</label></li>
+            <li><label for="All">Audiovisual and Sound Recordings</label></li>
+            <li><label for="All">Speeches and Press Releases</label></li>
+            <li><label for="All">Maps and Building Plans Posters</label></li>
+            <li><label for="All">Straits Settlements, Overseas and Private Records</label></li>
+            <li><label for="All">Government Records</label></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- search -->
+      <section class="search-results">
+        <div class="pagination">
+          <p>10 of 1,000 results</p>
+          <ul class="pages">
+            <li>
+              << /li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>...</li>
+            <li>></li>
+          </ul>
+        </div>
+
+        <ol id="results">
+          <li class="result" data-categories="photo">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Photographs</p>
+                  <h4>Types of birth report by midwife -- Report made to Municipal Health Officer under the Municipal
+                    Council in 1933</h4>
+                  <p>Accession No.: 57415</p>
+                  <p>Media - Image No: 19980005075 - 0048</p>
+                  <p class="result-date">Date: 16/02/1933</p>
+                  <p>Collection of: Lam Sian Lian</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="photo">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Photographs</p>
+                  <h4>View of people resting at the Padang with the Singapore Cricket Club and Municipal Building
+                    (right) in the background. Note the statue of Sir Stamford Raffles at its original location (right,
+                    in front of Municipal Building), before it was moved to Victorial Memorial Hall.</h4>
+                  <p>Accession No.: 133349</p>
+                  <p>Media - Image No: 19980005788 - 0104</p>
+                  <p class="result-date">Date: 1900s</p>
+                  <p>Collection of: Alexander Turnbull Library</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="oral">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Oral History Interviews</p>
+                  <h4>VAKIL, Behramgore Ratanshaw</h4>
+                  <p>Accession No.: 000297</p>
+                  <p class="result-date">Date: 23/07/1983</p>
+                  <p>Collection of: Communities of Singapore</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="audio">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Audiovisual and Sound Recordings</p>
+                  <h4>GE2020: Murali promises Bukit Batok residents improved municipal response if elected</h4>
+                  <p>Accession No.: 2020042159</p>
+                  <p>Recorded Duration: 12:02:25</p>
+                  <p class="result-date">Date: 07/07/2020</p>
+                  <p>Collection of: AsiaOne Online Pte Ltd</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="audio">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Audiovisual and Sound Recordings</p>
+                  <h4>Japanese Expeditionary Forces Surrender in Singapore</h4>
+                  <p>Accession No.: 1998001096</p>
+                  <p>Recorded Duration: 00:10:00</p>
+                  <p class="result-date">Date: -</p>
+                  <p>Collection of: National Film and Sound Archive (NFSA)</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="speech">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Speeches and Press Releases</p>
+                  <h4>IE Singapore’s Media Release on 26 Februrary 2017 - IE Partners ChongQing Municipal Govt to Drive
+                    Demonstrative CCI Projects</h4>
+                  <p>Accession No.: 20170226004</p>
+                  <p>Document No.: 20170226004</p>
+                  <p class="result-date">Date: 26/02/2017</p>
+                  <p>Collection of: International Enterprise Singapore</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="maps">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Maps and Building Plans</p>
+                  <h4>Plan Of Singapore Showing Topographical Detail And Municipal Numbers</h4>
+                  <p>Accession No.: SP001393_1</p>
+                  <p>Media - Image No.: 2016HDN0003 - 0003_SP001393_1</p>
+                  <p>Microfilm Number: NA186</p>
+                  <p class="result-date">Date: 1893</p>
+                  <p>Collection of: Survey Department, Singapore</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="straits">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Straits Settlements, Overseas and Private Records</p>
+                  <h4>CO717/196/52821/23: Colonial Office - Federated Malay States: Original Correspondence: Colonial
+                    Development and Welfare - Municipal Abattoir</h4>
+                  <p>Accession No.: CO717/196/52821/23</p>
+                  <p>Microfilm Number: NAB 1068</p>
+                  <p class="result-date">Date: 20/03/1950 - 16/11/1950</p>
+                  <p>Collection of: The National Archives, United Kingdom</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result" data-categories="govt">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Government Records</p>
+                  <h4>Water Main in Manasseh Lane and Cheang Hong Lim Lane</h4>
+                  <p>Accession No.: WATER 1665-01</p>
+                  <p>Microfilm Number: PUB 025</p>
+                  <p class="result-date">Date: 12/1901 - 08/1902</p>
+                  <p>Collection of: Municipal Council (MC)</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+
+          <li class="result govt">
+            <article>
+              <figure>
+                <img class="square" />
+                <figcaption class="results-info">
+                  <p>Government Records</p>
+                  <h4>Eating in Mun. (Municipal) Markets. Are they to be licensed?</h4>
+                  <p>Accession No.: Misc 444</p>
+                  <p>Microfilm Number: PUB376 - 26</p>
+                  <p class="result-date">Date: 1899</p>
+                  <p>Collection of: Municipal Council (MC)</p>
+                </figcaption>
+              </figure>
+            </article>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer-logo">
+          <h3>National Archives Singapore</h3>
+          <p>An institution of National Library Board</p>
+        </div>
+
+        <div class="links">
+          <div>
+            <h5>Links</h5>
+            <div class="link-grid">
+              <div class="left">
+                <p>NAS Corporate</p>
+                <p>About</p>
+                <p>Resources</p>
+                <p>Highlights</p>
+              </div>
+              <div class="right">
+                <p>Blast from the Past</p>
+                <p>Singapore Policy History</p>
+                <p>Singapore Memories</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h5>Quick links</h5>
+            <div>
+              <p>Contact Us</p>
+              <p>Feedback</p>
+              <p>FAQs</p>
+              <p>Related links</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tc">
+        <ul class="terms">
+          <li>Report Vulnerability</li>
+          <li>Terms of Use</li>
+          <li>Linking Disclaimer</li>
+          <li>Privacy Statement</li>
+          <li>Takedown Policy</li>
+        </ul>
+        <p class="copyright">
+          ©2024 Government of Singapore. Last Updated 2024-04-01
+        </p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

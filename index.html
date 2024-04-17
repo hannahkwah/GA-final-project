@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Archives Singapore Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/2aeda9739a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- top section -->
+      <div id="top">
+        <img
+          src="https://eservice.nlb.gov.sg/components/V2/content/img/singgov.svg"
+          alt="singgov logo"
+        />
+        <p>A Singapore Government Agency Website</p>
+      </div>
+
+      <!-- navbar -->
+      <nav class="header" id="navbar">
+        <div class="left-nav">
+          <div class="logo-desktop">
+            <a href="index.html"
+              ><img
+                src="https://eservice.nlb.gov.sg/components/V2/content/img/nas.svg"
+                alt="desktop nas logo"
+            /></a>
+          </div>
+          <div class="logo-mobile">
+            <a href="index.html"
+              ><img
+                src="https://eservice.nlb.gov.sg/components/V2/content/img/nas-logo.svg"
+                alt="mobile nas logo"
+            /></a>
+          </div>
+          <ul class="nav">
+            <li><a href="#">NAS Corporate</a></li>
+            <li><a href="#">About</a></li>
+            <li id="menu1">
+              <a href="#">Resources <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li id="menu2">
+              <a href="#">Highlights <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-nav">
+          <div class="erequest">
+            <button class="button">e-Request</button>
+            <p><i class="fa-solid fa-magnifying-glass"></i></p>
+          </div>
+          <div class="menu" id="menu-trigger">
+            <p><i class="fa-solid fa-bars"></i></p>
+          </div>
+        </div>
+      </nav>
+
+      <!-- dropdown -->
+      <section class="dropdown" id="resources">
+        <li><a href="#">Audiovisual and Sound Recordings</a></li>
+        <li><a href="#">Oral History Interviews</a></li>
+        <li><a href="#">Speeches and Press Releases</a></li>
+        <li><a href="#">Maps and Building Plans</a></li>
+        <li><a href="#">Posters</a></li>
+        <li>
+          <a href="#">Straits Settlements, Overseas and Private Records</a>
+        </li>
+        <li><a href="#">Government Records</a></li>
+      </section>
+
+      <section class="dropdown" id="highlights">
+        <li><a href="#">National Day Messages</a></li>
+        <li><a href="#">National Day Rally Speeches</a></li>
+        <li><a href="#">Rediffusion Short Clips</a></li>
+        <li><a href="#">Off The Record</a></li>
+        <li><a href="#">The Battle for Merger Radio Talks</a></li>
+        <li><a href="#">National Day Parades</a></li>
+        <li><a href="#">Papers Presented to Parliament</a></li>
+      </section>
+
+      <!-- side menu -->
+      <section class="header2" id="sidemenu">
+        <div class="header">
+          <div class="left-nav">
+            <div class="logo-mobile">
+              <img
+                src="https://eservice.nlb.gov.sg/components/V2/content/img/nas-logo.svg"
+                alt="mobile nas logo"
+              />
+            </div>
+          </div>
+          <div class="right-nav">
+            <div class="close" id="close">
+              <p><i class="fa-solid fa-xmark"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-nav">
+          <li><a href="#">NAS Corporate</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Highlights</a></li>
+          <li><a href="#" class="button2">e-Request</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+          </li>
+        </div>
+      </section>
+
+      <!-- search -->
+      <section class="search">
+        <div class="searchbar">
+          <form action="">
+            <input type="text" placeholder="Search for resources" />
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+          </form>
+        </div>
+
+        <div class="adv-search">
+          <p>
+            <a class="adv" href="#">Advanced search</a>
+          </p>
+          <p>or</p>
+          <p>
+            <a class="onesearch" href="#">OneSearch</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- hero section -->
+      <section class="carousel-container">
+        <div class="slide">
+          <img
+            src="https://www.nas.gov.sg/archivesonline/displayMainPortalImages?id=184&fileName=P%20Ramlee_ArchivesOnline_Banner_960x320.png"
+            alt="1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://www.nas.gov.sg/archivesonline/displayMainPortalImages?id=174&fileName=CM%20WEB%20BANNER%20960x320_LKY.jpg"
+            alt="2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://www.nas.gov.sg/archivesonline/displayMainPortalImages?id=160&fileName=sands%20of%20time%20S2.png"
+            alt="3"
+          />
+        </div>
+
+        <div class="controls">
+          <div id="prev" class="control">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div id="next" class="control">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- highlights -->
+      <div class="highlights">
+        <h2>Highlights</h2>
+
+        <section class="highlights-grid">
+          <div class="grid-item grid-item-1"></div>
+          <div class="grid-item grid-item-2"></div>
+          <div class="grid-item grid-item-3"></div>
+          <div class="grid-item grid-item-4"></div>
+          <div class="grid-item grid-item-5"></div>
+          <div class="grid-item grid-item-6"></div>
+          <div class="grid-item grid-item-7"></div>
+        </section>
+      </div>
+
+      <!-- past, history, memories -->
+      <section class="microsites">
+        <h2>Our microsites</h2>
+        <div class="info">
+          <!-- past -->
+          <figure class="grid past">
+            <div class="content">
+              <h3>Blast from the Past</h3>
+              <button class="button">
+                <a href="https://www.nas.gov.sg/archivesonline/blastfromthepast"
+                  >Find out more</a
+                >
+              </button>
+            </div>
+          </figure>
+
+          <!-- history -->
+          <figure class="grid history">
+            <div class="content">
+              <h3>Singapore Policy History</h3>
+              <button class="button">
+                <a href="https://www.nas.gov.sg/archivesonline/policy_history"
+                  >Find out more</a
+                >
+              </button>
+            </div>
+          </figure>
+
+          <!-- memories -->
+          <figure class="grid memories">
+            <div class="content">
+              <h3>Singapore Memories</h3>
+              <button class="button">
+                <a href="https://www.singaporememories.gov.sg/"
+                  >Find out more</a
+                >
+              </button>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact">
+        <h2>Get in touch with National Archives Singapore</h2>
+        <div class="grid-contact">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.801915450578!2d103.8457775758011!3d1.293313061753235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a165018d7b%3A0x687e9d7ae5d98fc2!2sNational%20Archives%20Singapore!5e0!3m2!1sen!2ssg!4v1712725017317!5m2!1sen!2ssg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-info">
+            <div class="address">
+              <h4>HQ Address</h4>
+              <p>
+                1 Canning Rise<br />
+                Singapore 179868
+              </p>
+            </div>
+            <div class="enquiry">
+              <h4>Contact Us</h4>
+              <p>
+                General Enquiries &amp; Feedback<br />
+                <a href="#"><u>nas@nlb.gov.sg</u></a
+                ><br />
+                We will respond within 5 working days. If more time is needed to
+                respond to you, we will let you know.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+          <div class="footer-logo">
+            <h3>National Archives Singapore</h3>
+            <p>An institution of National Library Board</p>
+          </div>
+
+          <div class="links">
+            <div>
+              <h5>Links</h5>
+              <div class="link-grid">
+                <div class="left">
+                  <p>NAS Corporate</p>
+                  <p>About</p>
+                  <p>Resources</p>
+                  <p>Highlights</p>
+                </div>
+                <div class="right">
+                  <p>Blast from the Past</p>
+                  <p>Singapore Policy History</p>
+                  <p>Singapore Memories</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5>Quick links</h5>
+              <div>
+                <p>Contact Us</p>
+                <p>Feedback</p>
+                <p>FAQs</p>
+                <p>Related links</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc">
+          <ul class="terms">
+            <li>Report Vulnerability</li>
+            <li>Terms of Use</li>
+            <li>Linking Disclaimer</li>
+            <li>Privacy Statement</li>
+            <li>Takedown Policy</li>
+          </ul>
+          <p class="copyright">
+            ©2024 Government of Singapore. Last Updated 2024-04-01
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
