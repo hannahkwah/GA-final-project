@@ -69,3 +69,18 @@ showSlide(currentSlide);
 
 document.getElementById("next").addEventListener("click", nextSlide);
 document.getElementById("prev").addEventListener("click", prevSlide);
+
+
+// search box
+const submitForm = document.getElementById("search-form");
+
+submitForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const search = document.getElementById("searching").value;
+    const searchNew = search.trim().toLowerCase();
+
+    if (searchNew === "municipal") {
+        location.replace("./basic-search.html");
+    }
+})
