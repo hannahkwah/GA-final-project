@@ -12,7 +12,7 @@
     rel="stylesheet" />
 
   <script src="https://kit.fontawesome.com/2aeda9739a.js" crossorigin="anonymous"></script>
-  <script defer src="js/main.js"></script>
+  <script defer src="js/search.js"></script>
 </head>
 
 <body>
@@ -133,15 +133,15 @@
         <p>Filter by</p>
         <p><b>Databases</b></p>
 
-          <ol class="buttons">
-            <li class="button">Photographs</li>
-            <li class="button">Oral History Interviews</li>
-            <li class="button">Audiovisual and Sound Recordings</li>
-            <li class="button">Speeches and Press Releases</li>
-            <li class="button">Maps and Building Plans Posters</li>
-            <li class="button">Straits Settlements, Overseas and Private Records</li>
-            <li class="button">Government Records</li>
-          </ol>
+          <div class="filter-btns">
+            <div class="filter-btn active active" id="filter-photo">Photographs</div>
+            <div class="filter-btn active" id="oral">Oral History Interviews</div>
+            <div class="filter-btn active" id="audio">Audiovisual and Sound Recordings</div>
+            <div class="filter-btn active" id="speech">Speeches and Press Releases</div>
+            <div class="filter-btn active" id="maps">Maps and Building Plans Posters</div>
+            <div class="filter-btn active" id="straits">Straits Settlements, Overseas and Private Records</div>
+            <div class="filter-btn active" id="govt">Government Records</div>
+          </div>
       </section>
 
       <!-- search -->
@@ -158,8 +158,8 @@
           </ul>
         </div>
 
-        <ol id="results">
-          <li class="result" data-category="Photo">
+        <div id="results">
+          <div class="result photo">
             <article>
               <figure>
                 <img class="square" />
@@ -174,9 +174,9 @@
                 </figcaption>
               </figure>
             </article>
-          </li>
+          </div>
 
-          <li class="result" data-category="Photo">
+          <li class="result photo">
             <article>
               <figure>
                 <img class="square" />
@@ -194,7 +194,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Oral">
+          <li class="result oral">
             <article>
               <figure>
                 <img class="square" />
@@ -209,7 +209,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Audio">
+          <li class="result audio">
             <article>
               <figure>
                 <img class="square" />
@@ -225,7 +225,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Audio">
+          <li class="result audio">
             <article>
               <figure>
                 <img class="square" />
@@ -241,7 +241,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Speech">
+          <li class="result speech">
             <article>
               <figure>
                 <img class="square" />
@@ -258,7 +258,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Maps">
+          <li class="result maps">
             <article>
               <figure>
                 <img class="square" />
@@ -275,7 +275,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Straits">
+          <li class="result straits">
             <article>
               <figure>
                 <img class="square" />
@@ -292,7 +292,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Govt">
+          <li class="result govt">
             <article>
               <figure>
                 <img class="square" />
@@ -308,7 +308,7 @@
             </article>
           </li>
 
-          <li class="result" data-category="Govt">
+          <li class="result govt">
             <article>
               <figure>
                 <img class="square" />
@@ -323,7 +323,7 @@
               </figure>
             </article>
           </li>
-        </ol>
+        </div>
       </section>
     </main>
 
